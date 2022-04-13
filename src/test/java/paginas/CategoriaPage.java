@@ -1,6 +1,7 @@
 package paginas;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 public class CategoriaPage {
@@ -11,7 +12,9 @@ public class CategoriaPage {
     }
 
     public ProdutoPage selecionaUmProduto(){
-        navegador.findElement(By.cssSelector("div.container.product-grid-page > div > div:nth-child(1) > div > section > div.m-t-32.m-t-0-sm > div > div:nth-child(1)")).click();
+        JavascriptExecutor js = (JavascriptExecutor) navegador;
+        js.executeScript("window.scrollBy(0,750)", "");
+        navegador.findElement(By.cssSelector("div.m-t-32.m-t-0-sm > div > div:nth-child(1)")).click();
 
         return new ProdutoPage(navegador);
     }

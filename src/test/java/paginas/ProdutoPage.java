@@ -20,7 +20,7 @@ public class ProdutoPage {
     }
 
     public SacolaPage adicionaASacola (){
-        navegador.findElement(By.cssSelector("#product--add-to-cart-form > div.row-i.row-pdp-inline-mobile > div:nth-child(2) > button")).click();
+        navegador.findElement(By.cssSelector("div.row-i.row-pdp-inline-mobile > div:nth-child(2) > button")).click();
         return new SacolaPage(navegador);
     }
 }

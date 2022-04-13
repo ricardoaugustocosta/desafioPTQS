@@ -17,7 +17,7 @@ public class BuscaTest {
     @BeforeEach
     public void beforeEach(){
 
-        System.setProperty("webdriver.chrome.driver", "C:\\Drivers\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Drivers\\chromedriver\\chromedriver.exe");
         this.navegador = new ChromeDriver();
 
         this.navegador.manage().window().maximize();
