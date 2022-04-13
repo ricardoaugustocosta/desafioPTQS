@@ -1,13 +1,9 @@
 package modulos;
 
-import net.jodah.failsafe.internal.util.Assert;
 import org.junit.jupiter.api.*;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import paginas.HomePage;
-import paginas.SacolaPage;
-
 
 @DisplayName("Desafio de teste em um e-commerce")
 public class BuscaTest {
@@ -24,6 +20,7 @@ public class BuscaTest {
 
         this.navegador.get("https://www.marisa.com.br/");
     }
+
     @Test
     @DisplayName("Adicionar um produto à sacola")
     public void testAdicionarUmProdutoASacola() {
@@ -33,14 +30,11 @@ public class BuscaTest {
                 .selecionaUmProduto()
                 .escolheUmTamanho()
                 .adicionaASacola()
-                .validaQueEstaNaSacola();
-
-        //Assertions.assertEquals("Finalizar Compra", textoElement);
+                .vejaQueEstaNaSacola();
     }
 
     @AfterEach
     public void afterEach(){
         navegador.quit();
-
     }
 }
