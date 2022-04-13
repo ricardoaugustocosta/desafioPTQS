@@ -18,3 +18,8 @@ Para executar este projeto, você precisará de:
 ## Observação: 
 
 Em System.setProperty("webdriver.chrome.driver", "**caminho do seu chromedriver**");
+
+
+### Em anexo o mapa mental da estratégia de testes:
+
+![Desafio 5 PTQS](https://user-images.githubusercontent.com/98958991/163287720-67c5cb53-9c9a-44f8-a0af-e1b6a972d507.png)
