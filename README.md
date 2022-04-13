@@ -17,4 +17,4 @@ Para executar este projeto, você precisará de:
 
 ## Observação: 
 
-Em System.setProperty("webdriver.chrome.driver", "caminho do seu chromedriver");
+Em System.setProperty("webdriver.chrome.driver", "**caminho do seu chromedriver**");
